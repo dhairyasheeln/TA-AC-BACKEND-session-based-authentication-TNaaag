@@ -9,6 +9,8 @@
   "author": "AltCampus",
   "license": "GNU GPL V3",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
     "jest": "^26.0.1"
   }
 }
