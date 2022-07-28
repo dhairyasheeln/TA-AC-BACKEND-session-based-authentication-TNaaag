@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=width, initial-scale=version">
+    <title>Articles</title>
+</head>
+<body>
+    <header>
+        <a href="/users/login">Login</a>
+        <a href="/users/register">SignUp</a>
+        <a href="/users/logout">Logout</a>
+    </header>
+    <main>
+        <%  articles.forEach((article)=>{ %>
+            <p><%= article.title %></p>
+            <!-- <a href="/articles/<%= article.id %>">Details</a> -->
+            <a href="/articles/<%= article.slug %>">Details</a>
+            <br>
+        <% }) %>
+    </main>
+</body>
+</html>
